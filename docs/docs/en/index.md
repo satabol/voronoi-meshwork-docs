@@ -1,3 +1,5 @@
+![alt text](../assets/image_2026-09-16_10-52-48.png)
+
 # Introduction
 
 > Documentation template for Voronoi Meshwork.
