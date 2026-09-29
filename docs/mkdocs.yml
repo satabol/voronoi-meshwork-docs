@@ -1,0 +1,78 @@
+site_name: Voronoi Meshwork
+site_description: Documentation for the Voronoi Meshwork Blender add-on
+docs_dir: docs/en
+site_dir: site
+use_directory_urls: true
+
+theme:
+  name: material
+  language: en
+  logo: /assets/logo.png
+  features:
+    - navigation.sections
+    - navigation.top
+    - content.code.copy
+
+extra_css:
+  - assets/stylesheets/extra.css
+
+plugins:
+  - search
+  - nav-numbering:
+      nav_depth: 4
+      heading_depth: 4
+      number_h1: true
+      number_nav: true
+      number_headings: true
+      preserve_anchor_ids: true
+      separator: "."
+  - glightbox
+
+markdown_extensions:
+  - attr_list
+  - tables
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - toc:
+      permalink: true
+
+# The order below is the documentation order.
+# Do not add chapter numbers manually: nav-numbering generates them.
+nav:
+  - Getting Started:
+      - "Introduction": index.md
+      - "Key Features": key-features.md
+      - "Installation": installation.md
+      - "Quick Start": quick-start.md
+
+  - Core Concepts and Controls:
+      - "Basic Concepts": basic-concepts.md
+      - "Voronoi Modes": voronoi-modes.md
+      - "Source Object Settings": source-settings.md
+      - "Site Object Settings": site-settings.md
+      - "Coordinate Space": coordinate-space.md
+      - "Interactive Calculation": interactive-calculation.md
+      - "Spacing": spacing.md
+      - "Filters": filters.md
+      - "Patterns, Symmetry & Moiré": patterns-symmetry-moire.md
+      - "Working with Modifiers": modifiers.md
+
+  - Output and Workflow:
+      - "Output Geometry": output-geometry.md
+      - "UV Maps and Materials": uv-materials.md
+      - "Continuing the Workflow": continuing-workflow.md
+      - "Performance": performance.md
+
+  - Help and Examples:
+      - "Error Handling": error-handling.md
+      - "Troubleshooting": troubleshooting.md
+      - "Examples / Recipes": examples-recipes.md
+      - "Gallery": gallery.md
+      - "Known Limitations": known-limitations.md
+      - "FAQ": faq.md
+      - "Reporting Problems": reporting-problems.md
+
+  - Project:
+      - "Changelog": changelog.md
+      - "License / Credits / Third-party Libraries": license-credits.md
