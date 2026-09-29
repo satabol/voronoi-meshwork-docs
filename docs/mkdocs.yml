@@ -1,13 +1,13 @@
 site_name: Voronoi Meshwork
 site_description: Documentation for the Voronoi Meshwork Blender add-on
-docs_dir: docs/en
+docs_dir: docs
 site_dir: site
 use_directory_urls: true
 
 theme:
   name: material
   language: en
-  logo: /assets/logo.png
+  logo: assets/logo.png
   features:
     - navigation.sections
     - navigation.top
@@ -18,6 +18,16 @@ extra_css:
 
 plugins:
   - search
+  - i18n:
+      docs_structure: folder
+      fallback_to_default: true
+      reconfigure_material: true
+      reconfigure_search: true
+      languages:
+        - locale: en
+          default: true
+          name: English
+          build: true
   - nav-numbering:
       nav_depth: 4
       heading_depth: 4
