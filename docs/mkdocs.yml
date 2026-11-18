@@ -6,6 +6,7 @@ use_directory_urls: true
 
 theme:
   name: material
+  custom_dir: overrides
   language: en
   logo: assets/logo.png
   features:

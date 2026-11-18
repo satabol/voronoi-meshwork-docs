@@ -1,0 +1,16 @@
+
+<!-- **************************************** -->
+<!-- 2026-11-18 11:25 +03:00 -->
+
+{% extends "base.html" %}
+
+{% block scripts %}
+    {{ super() }}
+
+    <!-- Cloudflare Web Analytics -->
+    <script type="module"
+            src="https://static.cloudflareinsights.com/beacon.min.js"
+            data-cf-beacon='{"token": "196117d0ac5f4599b7e07366d54c0fb2"}'>
+    </script>
+    <!-- End Cloudflare Web Analytics -->
+{% endblock %}
